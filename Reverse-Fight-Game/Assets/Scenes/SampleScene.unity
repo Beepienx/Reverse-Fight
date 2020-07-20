@@ -206,6 +206,7 @@ GameObject:
   - component: {fileID: 885177153}
   - component: {fileID: 885177152}
   - component: {fileID: 885177151}
+  - component: {fileID: 885177154}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: Untagged
@@ -356,6 +357,27 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!50 &885177154
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885177149}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &1001075358
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,6 +497,7 @@ GameObject:
   - component: {fileID: 1983352623}
   - component: {fileID: 1983352622}
   - component: {fileID: 1983352624}
+  - component: {fileID: 1983352625}
   m_Layer: 8
   m_Name: PlayerTest1
   m_TagString: Player
@@ -652,3 +675,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1983352620}
   RunSpeed: 10
+--- !u!114 &1983352625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983352617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43eb0c6c7bb6b8c4a9d294c5b91a759e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet: {fileID: 885177149}
+  maxGravity: 10000
+  maxGravityDist: 10000
+  rb: {fileID: 885177154}
